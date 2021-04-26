@@ -8,13 +8,20 @@ import { Navbar } from "./components";
 function App() {
   return (
     <div className="App">
+      {/* <Navbar/> */}
       <Navbar menu={{ name: "propsname", path: "propsPath" }} />
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </Router>
+      <div className="content">
+        <div className="container">
+          <Router>
+            <Switch>
+              <Route exact path="/" component={Home} />
+            </Switch>
+          </Router>
+        </div>
+      </div>
+      
     </div>
+            
   );
 }
 

@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/navbar.scss";
+import "./navbar.scss";
 import { Input, Button, Icon, Transition } from "semantic-ui-react";
 
 type Props = {
   menu: { name: string; path: string } | null | undefined;
 };
 
-const Navbar: React.FC<Props> = ({ menu }) => {
+const Navbar2: React.FC<Props> = ({ menu }) => {
   const [mobileMenuDisplay, setMobileMenuDisplay] = React.useState(false);
   const [buttonClicked, setButtonClicked] = React.useState(true);
   const [searchClicked, setSearchClicked] = React.useState(true);
@@ -129,4 +129,4 @@ const Navbar: React.FC<Props> = ({ menu }) => {
   );
 };
 
-export default Navbar;
+export default Navbar2;
