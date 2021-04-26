@@ -1,3 +1,16 @@
+@import './asset/font/index';
+h1, h2 {
+  font-family: "Skranji", sans-serif;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-family: "Suez One", serif;
+}
+
 .App {
   width: 100%;
   min-height: 120vh;
