@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(./Open_Sans/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format("woff2");
+  src: url("./Open_Sans/mem8YaGs126MiZpBA-UFWJ0bbck.woff2") format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
@@ -137,75 +137,4 @@
   src: url("./Suez_One/taiJGmd_EZ6rqscQgOFOmos.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-h1, h2 {
-  font-family: "Skranji", sans-serif;
-}
-
-h3 {
-  font-family: "Open Sans", sans-serif;
-}
-
-p {
-  font-family: "Suez One", serif;
-}
-
-.App {
-  width: 100%;
-  min-height: 120vh;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: dodgerblue;
-  position: absolute;
-}
-
-.content {
-  margin-top: 60px;
-  height: 100vh;
-}
-
-.container {
-  margin: auto;
-  height: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.hidden {
-  display: none;
-}
-
-@media (max-width: 575.98px) {
-  .container {
-    max-width: 575.98px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .container {
-    max-width: 576px;
-    min-width: 767.98px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .container {
-    max-width: 991.98px;
-    min-width: 768px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .container {
-    max-width: 1199.98px;
-    min-width: 992px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=index.css.map */
