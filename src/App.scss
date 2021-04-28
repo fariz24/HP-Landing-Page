@@ -13,7 +13,7 @@ p {
 
 .App {
   width: 100%;
-  min-height: 120vh;
+  min-height: 200vh;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -24,13 +24,14 @@ p {
 }
 
 .content {
-  margin-top:60px;
+  // border: 1px solid red;
   height:100vh;
 }
 
 .container {
-  margin:auto;
+  // border: 1px solid green;
   height: 100%;
+  margin:auto;
   padding-left: 0;
   padding-right: 0;
 }

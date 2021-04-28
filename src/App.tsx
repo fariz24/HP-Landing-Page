@@ -10,16 +10,11 @@ function App() {
     <div className="App">
       {/* <Navbar/> */}
       <Navbar menu={{ name: "propsname", path: "propsPath" }} />
-      <div className="content">
-        <div className="container">
-          <Router>
-            <Switch>
-              <Route exact path="/" component={Home} />
-            </Switch>
-          </Router>
-        </div>
-      </div>
-      
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </Router>
     </div>
             
   );
