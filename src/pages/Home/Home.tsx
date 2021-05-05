@@ -1,10 +1,10 @@
-import React , {Component} from "react"
+import React , {Component, Fragment} from "react"
 import ParalaxComponent from '../../components/ParalaxComponent/ParalaxComponent'
-import { Card, Grid, Image } from 'semantic-ui-react'
+import CardDivision from '../../components/CardComponent/CardDivision'
+import CardArticle from '../../components/CardComponent/CardArticle'
 import businessPerson from "../../asset/img/bussiness-person.jpg"
 import './Home.scss'
 
-const src = businessPerson
 
 // type Props = {
 //   name: string;
@@ -20,54 +20,34 @@ const src = businessPerson
 
 class Home extends Component {
   state= {
-    divisions: {
+    divisions:[],
+    division: {
       image: [""],
       divisionName : []
-    }
+    },
+    image : businessPerson
   }
 
   render() {
     return (
-      <div className="home">
+      <Fragment>
         <ParalaxComponent name="propsname"/>
-
         <div className="container">
+
           <div className="divisions">
             <h2>DIVISIONS</h2>
 
             <div className="row">
-              <div className="division-card">
-                  <div className="image-division">
-                    <img src={src}/>
-                    <div className="division-name">
-                      <p>ROCK CLIMBING</p>
-                    </div>
-                  </div>
-              </div>
-              <div className="division-card">
-                  <div className="image-division">
-                    <img src={src}/>
-                    <div className="division-name">
-                      <p>RAFTING</p>
-                    </div>
-                  </div>
-              </div>
-              <div className="division-card">
-                  <div className="image-division">
-                    <img src={src}/>
-                    <div className="division-name">
-                      <p>CAVING</p>
-                    </div>
-                  </div>
-              </div>
-              <div className="division-card">
-                  <div className="image-division">
-                    <img src={src}/>
-                    <div className="division-name">
-                      <p>MOUNTAINERING</p>
-                    </div>
-                  </div>
-              </div>
+              {/* {
+                this.state.division.map(divsion => {
+                  return <CardDivision key="id" />
+                })
+              } */}
+
+              <CardDivision/>
+              <CardDivision/>
+              <CardDivision/>
+              <CardDivision/>
             </div>
 
             <div className="division-description">
@@ -79,19 +59,76 @@ class Home extends Component {
             </div>
 
           </div>
-        </div>
 
-        <div className="article">
-          <div className="container">
-            <h1>ARTICLE</h1>
+          <div className="banner">
+            <h2 className="banner-title">TRIBUTES <br/>OUR BROTHERS</h2>
+            <div className="banner-description">
+              HP melakukan penyaringan melalui pendidikan dasar dan beberapa perjalanan 4 divisi yaitu jeram, panjat tebing, selusur goa, dan gunung & hutan . 
+              Setelah perjalanan 4 divisi, selanjutnya adalah spesialisasi 1 divisi yang telah dipilih. 
+            </div>
+          </div>
 
-            <Card>
-              
-            </Card>
+          <div className="article">
+            <h2>ARTICLE</h2>
+
+            <div className="article-description">
+              <h3>
+                HARSHA PRATALA (HP) menyikapi kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                HP mencoba untuk memfasilitasi jarak dan waktu, dengan dimensi yang berbeda, 
+                dunia maya saat ini menjadi solusi untuk menjadi solusi untuk menyambung benang merah antar generasi.
+              </h3>
+            </div>
+
+            <div className="banner-article">
+
+              <div className="banner-article-image">
+                <img src={this.state.image} alt="banner-article"/>
+              </div>
+
+              <div className="banner-article-content">
+                <h3 className="banner-article-title">Siapa Stop Global Warming</h3>
+                <div className="banner-article-description">
+                  Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                  HP mencoba untuk memfasilita,Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                  HP mencoba untuk memfasilita,Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                  HP mencoba untuk memfasilita,Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                  HP mencoba untuk memfasilita,Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                  HP mencoba untuk memfasilita,Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                  HP mencoba untuk memfasilita,Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                  HP mencoba untuk memfasilita,Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                  HP mencoba untuk memfasilita,Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat raya, 
+                  HP mencoba untuk memfasilita,Kemajuan jaman ini dengan membangun base informasi bagi para anggotanya di seluruh jagat 
+                </div>
+                <div className="banner-article-created">
+                  11-MARET 2021   -  by HP 146
+                </div>
+                <a href="#" className="banner-article-button">
+                  Lebih Lanjut
+                </a>
+              </div>
+
+            </div>
+
+            <div className="row">
+              {/* {
+                this.state.division.map(divsion => {
+                  return <CardDivision key="id" />
+                })
+              } */}
+
+              <CardArticle/>
+              <CardArticle/>
+              <CardArticle/>
+              <CardArticle/>
+              <CardArticle/>
+              <CardArticle/>
+              <CardArticle/>
+              <CardArticle/>
+            </div>
+
           </div>
         </div>
-        
-      </div>
+      </Fragment>
     )
   }
 }

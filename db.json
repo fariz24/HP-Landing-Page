@@ -1,0 +1,24 @@
+{
+    "divisions" : [
+        {
+            "userId" : 1,
+            "id" : 1,
+            "title" : "ROCK CLIMBING"
+        },
+        {
+            "userId" : 1,
+            "id" : 2,
+            "title" : "RAFTING"
+        },
+        {
+            "userId" : 1,
+            "id" : 3,
+            "title" : "CAVING"
+        },
+        {
+            "userId" : 1,
+            "id" : 4,
+            "title" : "MOUNTERING"
+        }
+    ]
+}
